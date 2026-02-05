@@ -1,0 +1,8 @@
+upstox-python-sdk
+pandas
+numpy
+requests
+beautifulsoup4
+textblob
+python-dotenv
+pandas-ta
