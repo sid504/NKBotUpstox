@@ -2,8 +2,8 @@ import React, { useEffect, useState, useRef } from 'react';
 import { Activity, TrendingUp, TrendingDown, DollarSign, Shield, Zap, Power } from 'lucide-react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 
-const API_URL = "http://localhost:8000";
-const WS_URL = "ws://localhost:8000/ws";
+const API_URL = import.meta.env.VITE_API_URL || "http://localhost:8000";
+const WS_URL = import.meta.env.VITE_WS_URL || "ws://localhost:8000/ws";
 
 const GodfatherDashboard = () => {
     const [metrics, setMetrics] = useState(null);
